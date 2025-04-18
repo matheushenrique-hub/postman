@@ -10,4 +10,4 @@ Consulte **[REQRES](https://reqres.in/)** para ter acesso à documentação da A
 
 ### 📋 Pré-requisitos
 
-Necessário possuir o Postman instalado no computador.
+É necessário possuir o Postman instalado no computador e acesso a uma API de teste.
