@@ -11,3 +11,7 @@ Consulte **[REQRES](https://reqres.in/)** para ter acesso à documentação da A
 ### 📋 Pré-requisitos
 
 Necessário possuir o Postman instalado no computador.
+
+## ✒️ Autores
+
+* **Análista de Qualidade de Software** - **18/04/2025** - Matheus H. L. Fernandes.
