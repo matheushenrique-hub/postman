@@ -10,8 +10,13 @@ Consulte **[REQRES](https://reqres.in/)** para ter acesso à documentação da A
 
 ### 📋 Pré-requisitos
 
+<<<<<<< HEAD
 Necessário possuir o Postman instalado no computador.
 
 ## ✒️ Autores
 
 * **Análista de Qualidade de Software** - **18/04/2025** - Matheus H. L. Fernandes.
+=======
+É necessário possuir o Postman instalado no computador e acesso a uma API de teste.
+Basta acessar o link acima para ter acesso à API que será utilizada nos testes.
+>>>>>>> Edicao-do-Readme
