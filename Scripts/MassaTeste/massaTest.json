@@ -5,17 +5,22 @@
         "password": "cityslicka"
     },
     {
-        "_comment2": "Massa de teste para Status 400 ",
-        "email": "",
-        "password": "cityslicka"
-    },
-    {
-        "_comment3": "Massa de teste para  Status 400.",
+        "_comment2": "Massa de teste para  Status 400.",
         "email": "eve.holt@reqres.in",
         "password": ""
     },
     {
-        "_comment4": "Massa de teste para Status 404.",
+        "_comment3": "Massa de teste para Status 400 ",
+        "email": "",
+        "password": "cityslicka"
+    },
+    {
+        "_comment4": "Massa de teste para Status 400 ",
+        "email": " ",
+        "password": "cityslicka"
+    },
+    {
+        "_comment5": "Massa de teste para Status 404.",
         "baseUrl": "https://reqres.in/",
         "endpoint": "/api/login",
         "email": "eve.holt@reqres.in",
