@@ -39,13 +39,14 @@ switch (statusCode) {
         break;
 // status code 404
     case 404:
-// status code 404
         pm.test(`N - Validar Status code 404 - Not Found: Endpoint incorreto.`, () => {
             pm.response.to.have.status(404);
         });
         break;
 
     default:
-        console.log(`Status inesperado`, statusCode )    
+        pm.test(`Status inesperado retornado.`, () => {
+            console.log(`Status inesperado`, statusCode);
+        });
 }
 pm.expect([200, 400, 404]).to.include(statusCode);
