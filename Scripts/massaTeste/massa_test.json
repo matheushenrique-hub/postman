@@ -1,23 +1,39 @@
 [
     {
         "_comment1": "Massa de teste para  Status 200.",
-        "email": "eve.holt@reqres.in",
-        "password": "cityslicka"
+        "baseUrl": "https://reqres.in",
+        "endpoint": "/api/login",
+        "email": "henri.lou@test.com",
+        "password": "t3$t312345"
     },
     {
         "_comment2": "Massa de teste para  Status 400.",
+        "baseUrl": "https://reqres.in",
+        "endpoint": "/api/login",
         "email": "eve.holt@reqres.in",
         "password": ""
     },
     {
         "_comment3": "Massa de teste para Status 400 ",
+        "baseUrl": "https://reqres.in",
+        "endpoint": "/api/login",
         "email": "",
         "password": "cityslicka"
     },
     {
         "_comment4": "Massa de teste para Status 400 ",
+        "baseUrl": "https://reqres.in",
+        "endpoint": "/api/login",
         "email": " ",
         "password": "cityslicka"
+    },
+    {
+        "_comment6": "Massa de teste para Status 400 ",
+        "baseUrl": "https://reqres.in",
+        "endpoint": "/api/login",
+        "email": "henri.lou@test.com",
+        "password": "t3$t312345"
+
     },
     {
         "_comment5": "Massa de teste para Status 404.",
@@ -26,4 +42,5 @@
         "email": "eve.holt@reqres.in",
         "password": "cityslicka"
     }
+
 ]

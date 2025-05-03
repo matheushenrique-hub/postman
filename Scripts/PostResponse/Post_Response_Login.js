@@ -1,14 +1,12 @@
 // Varíavel recebe o status code do response.
 const statusCode = pm.response.code;
-
 // Validar se o JSON é válido.
 let resposnseJson;
 try {
     resposnseJson = pm.response.json();    
 } catch (e) {
     pm.test(`N - O response não é um JSON válido.`, () => {});
-}
-
+};
 // Verificar status code e validar a resposta esperada.
 switch (statusCode) {
 // Status code 200    
@@ -37,12 +35,22 @@ switch (statusCode) {
             });
         }
         else {
-            pm.test(`N - Falha ao logar (e-mail ou nome de usuário vazio): Status Code 400 - Bad Request.`, () => {
+            pm.test(`N - Falha ao logar (e-mail ou nome de usuário vazio ou não definidos): Status Code 400 - Bad Request.`, () => {
                 pm.response.to.have.status(400);
                 pm.expect(resposnseJson).to.have.property("error");
                 pm.expect(resposnseJson.error).to.eql("user not found");
             });
         }
+        break;
+// Status code 401
+    case 401:
+        pm.test(`N - Falha ao acessar a API (Chave de API ausente): Status code 401 - Unauthorized.`, () => {
+            pm.response.to.have.status(401);
+            pm.expect(resposnseJson).to.have.property("error");
+            pm.expect(resposnseJson.error).to.eql("Missing API key.");
+            pm.expect(resposnseJson).to.have.property("how_to_get_one");
+            pm.expect(resposnseJson.how_to_get_one).to.eql("https://reqres.in/signup");
+        });
         break;
 // Status code 404
     case 404:
@@ -56,4 +64,4 @@ switch (statusCode) {
             console.log(`Status inesperado`, statusCode);
         });
 }
-pm.expect([200, 400, 404]).to.include(statusCode);
+pm.expect([200, 400, 401, 404]).to.include(statusCode);
